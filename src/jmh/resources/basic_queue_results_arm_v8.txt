@@ -1,0 +1,22 @@
+Benchmark                                    (consumerTokens)           (implementation)  (producerTokens)  (queueCapacity)   Mode  Cnt      Score     Error   Units
+BasicQueueBenchmark.group                                   5         SPSC_VolatileQueue                 5             1023  thrpt  100  22144.798 ± 124.556  ops/ms
+BasicQueueBenchmark.group:consume                           5         SPSC_VolatileQueue                 5             1023  thrpt  100  11071.364 ±  62.709  ops/ms
+BasicQueueBenchmark.group:produce                           5         SPSC_VolatileQueue                 5             1023  thrpt  100  11073.434 ±  61.850  ops/ms
+BasicQueueBenchmark.group:tryConsumeFailed                  5         SPSC_VolatileQueue                 5             1023  thrpt  100      0.174 ±   0.094  ops/ms
+BasicQueueBenchmark.group:tryConsumeSucceed                 5         SPSC_VolatileQueue                 5             1023  thrpt  100  11071.255 ±  62.696  ops/ms
+BasicQueueBenchmark.group:tryProduceFailed                  5         SPSC_VolatileQueue                 5             1023  thrpt  100      2.285 ±   1.256  ops/ms
+BasicQueueBenchmark.group:tryProduceSucceed                 5         SPSC_VolatileQueue                 5             1023  thrpt  100  11071.201 ±  62.713  ops/ms
+BasicQueueBenchmark.group                                   5           SPSC_AcqRelQueue                 5             1023  thrpt  100  32510.129 ± 270.777  ops/ms
+BasicQueueBenchmark.group:consume                           5           SPSC_AcqRelQueue                 5             1023  thrpt  100  16254.709 ± 135.621  ops/ms
+BasicQueueBenchmark.group:produce                           5           SPSC_AcqRelQueue                 5             1023  thrpt  100  16255.420 ± 135.157  ops/ms
+BasicQueueBenchmark.group:tryConsumeFailed                  5           SPSC_AcqRelQueue                 5             1023  thrpt  100      0.147 ±   0.060  ops/ms
+BasicQueueBenchmark.group:tryConsumeSucceed                 5           SPSC_AcqRelQueue                 5             1023  thrpt  100  16254.621 ± 135.592  ops/ms
+BasicQueueBenchmark.group:tryProduceFailed                  5           SPSC_AcqRelQueue                 5             1023  thrpt  100      0.845 ±   0.793  ops/ms
+BasicQueueBenchmark.group:tryProduceSucceed                 5           SPSC_AcqRelQueue                 5             1023  thrpt  100  16254.599 ± 135.550  ops/ms
+BasicQueueBenchmark.group                                   5  ArrayBlockingQueueWrapper                 5             1023  thrpt  100   5898.966 ± 131.092  ops/ms
+BasicQueueBenchmark.group:consume                           5  ArrayBlockingQueueWrapper                 5             1023  thrpt  100   2951.280 ±  67.844  ops/ms
+BasicQueueBenchmark.group:produce                           5  ArrayBlockingQueueWrapper                 5             1023  thrpt  100   2947.686 ±  63.394  ops/ms
+BasicQueueBenchmark.group:tryConsumeFailed                  5  ArrayBlockingQueueWrapper                 5             1023  thrpt  100     10.885 ±   4.542  ops/ms
+BasicQueueBenchmark.group:tryConsumeSucceed                 5  ArrayBlockingQueueWrapper                 5             1023  thrpt  100   2940.398 ±  65.076  ops/ms
+BasicQueueBenchmark.group:tryProduceFailed                  5  ArrayBlockingQueueWrapper                 5             1023  thrpt  100      6.993 ±   4.345  ops/ms
+BasicQueueBenchmark.group:tryProduceSucceed                 5  ArrayBlockingQueueWrapper                 5             1023  thrpt  100   2940.801 ±  65.026  ops/ms
